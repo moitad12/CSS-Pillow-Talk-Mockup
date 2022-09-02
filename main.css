@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap');
+
+
+img {
+    width: 150px;
+}
+
+body {
+    background-color: snow;
+    color: slategray;
+    margin: 20px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+footer {
+    padding: 1em;
+}
+
+aside {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.menu-list {
+    list-style: none;
+    display: block;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.menu-list > li:hover {
+    color: magenta;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+main {
+    background-color: snow;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.top-row {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row img {
+    width: 100%;
+    height: auto;
+}
+
+.middle-row {
+    flex-grow: 2;
+    display: flex;
+}
+
+.middle-row img {
+    flex: 1 1 50%;
+}
+
+.bottom-row {
+    flex-grow: 1;
+    display: flex;
+    gap: 1em;
+}
+
+.bottom-row img {
+    flex: 1 1 33%;
+}
+
+@media (min-width 600px) {
+    .container {
+        flex-direction: row;
+    }
+    ul.menu-list {
+        list-style: none;
+        display: block;
+        padding: 0 2em;
+    }
+}
